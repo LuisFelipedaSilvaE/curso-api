@@ -25,8 +25,14 @@ public class LocalConfig {
             User u1 = new User(null, "Jonathan", "jona@gmail.com", "J0J0");
             User u2 = new User(null, "Joseph", "jose@gmail.com", "J0J0");
             User u3 = new User(null, "Jotaro", "jota@gmail.com", "J0J0");
+            User u4 = new User(null, "Josuke", "josu@gmail.com", "J0J0");
+            User u5 = new User(null, "Giorno", "gior@gmail.com", "J0J0");
+            User u6 = new User(null, "Jolyne", "joly@gmail.com", "J0J0");
+            User u7 = new User(null, "Johnny", "john@gmail.com", "J0J0");
+            User u8 = new User(null, "Gappy", "gapp@gmail.com", "J0J0");
+            User u9 = new User(null, "Jodio", "jodi@gmail.com", "J0J0");
 
-            repository.saveAll(List.of(u1, u2, u3));
+            repository.saveAll(List.of(u1, u2, u3, u4, u5, u6, u7, u8, u9));
 
             System.out.println("--- DADOS DE TESTE CARREGADOS NO BANCO (PERFIL LOCAL) ---"); // Opcional: log para confirmar
         };
