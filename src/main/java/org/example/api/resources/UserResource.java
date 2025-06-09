@@ -1,6 +1,5 @@
 package org.example.api.resources;
 
-import org.example.api.domain.User;
 import org.example.api.domain.dto.UserDTO;
 import org.example.api.services.UserService;
 import org.modelmapper.ModelMapper;
@@ -11,7 +10,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/user")
@@ -27,7 +25,6 @@ public class UserResource {
 
     @GetMapping(path = ID)
     public ResponseEntity<UserDTO> findById(@PathVariable Integer id) {
-
         return ResponseEntity.ok().body(mapper.map(service.findById(id), UserDTO.class));
     }
 
