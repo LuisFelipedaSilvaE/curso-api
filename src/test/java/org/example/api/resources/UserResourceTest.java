@@ -37,7 +37,7 @@ class UserResourceTest {
     public static final int INDEX = 0;
 
     private User user;
-    private UserDTO userDTO;
+    private UserDTO userDTO = new UserDTO();
 
     @BeforeEach
     void setUp() {
